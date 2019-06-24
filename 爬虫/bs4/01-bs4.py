@@ -16,4 +16,6 @@ soup = BeautifulSoup(open('web.html','r',encoding='utf-8'),'lxml')
 '''
 
 #tag
-print(soup.div)
+print(soup.html.head.meta )
+print(soup.div.input.name) #返回标签名
+print(soup.div.input.attrs) #返回标签里面的属性 字典格式
